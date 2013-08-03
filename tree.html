@@ -1,0 +1,22 @@
+<html>
+<head></head>
+<body>
+
+	<script type="text/javascript" src="tree.js"></script>
+	<script type="text/javascript">
+
+	var list = [
+		{'id': 0, 'label': 'Menu 1', parent: null},
+		{'id': 1, 'label': 'Homepage', parent: 0},
+		{'id': 2, 'label': 'Informationen', parent: 0},
+		{'id': 3, 'label': 'Impressum', parent: 2},
+		{'id': 4, 'label': 'About', parent: 3},
+	];
+	var tree = new Tree().insertList(list);
+	console.log("List: ", list);
+	console.log("Tree: ", tree);
+
+	</script>
+
+</body>
+</html>
